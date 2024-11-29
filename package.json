@@ -3,7 +3,7 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
-  "homepage": "https://username.github.io/devedbyaiden",
+  "homepage": "https://nunatuna.github.io/devedbyaiden",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
