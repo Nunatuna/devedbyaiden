@@ -1,1 +1,0 @@
-import{c as t}from"./index-6N2MzvQo.js";import{u as e}from"./useRouteContext-DiJuKret.js";const c=t("/about")({component:n});function n(){const o=e({from:"/about"});return console.log(o),React.createElement("div",null,"Hello from About!")}export{c as Route};
