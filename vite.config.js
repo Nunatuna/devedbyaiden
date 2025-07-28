@@ -1,9 +1,8 @@
-import { defineConfig } from 'vite';
-import react from '@vitejs/plugin-react';
+import { defineConfig } from "vite";
+import react from "@vitejs/plugin-react";
+import { TanStackRouterVite } from "@tanstack/router-plugin/vite";
 
-export default defineConfig(({ command }) => ({
-  base: command === 'build' ? '/devedbyaiden/' : '/',
-  plugins: [
-    react(),
-  ],
-}));
+// https://vite.dev/config/
+export default defineConfig({
+  plugins: [TanStackRouterVite(), react()],
+});
