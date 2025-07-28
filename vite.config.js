@@ -12,7 +12,7 @@ export default defineConfig({
     viteStaticCopy({
       targets: [
         {
-          src: 'index.html',
+          src: 'index.lazy.jsx',
           dest: '.', // Copy index.html → dist/404.html
           rename: '404.html'
         }
