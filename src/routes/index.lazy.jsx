@@ -34,7 +34,7 @@ function Index() {
             </div>
           </div>
           <div className="image-container">
-            <img src="src\img\me.png" alt="" />
+            <img src="public/img/me.png" alt="" />
           </div>
         </div>
         <h1 id="projects" style={{ textAlign: "center" }}><FontAwesomeIcon icon="fa-solid fa-caret-down" /> Projects <FontAwesomeIcon icon="fa-solid fa-caret-down" /></h1>
@@ -47,7 +47,7 @@ function Index() {
           content={
             <>
               <p>This project demonstrates my skills in frontend development.This project demonstrates my skills in frontend development.This project demonstrates my skills in frontend development.</p>
-              <img style={{ width: "100%" }} src="src\img\nocaDashboard.png" alt=""></img>
+              <img style={{ width: "100%" }} src="public/img/nocaDashboard.png" alt=""></img>
             </>
           }
         />
