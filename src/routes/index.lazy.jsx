@@ -34,7 +34,7 @@ function Index() {
             </div>
           </div>
           <div className="image-container">
-            <img src="/devedbyaiden/img/me.png" alt="Me" />
+            <img src="./public/img/me.png" alt="Me" />
           </div>
         </div>
         <h1 id="projects" style={{ textAlign: "center" }}><FontAwesomeIcon icon="fa-solid fa-caret-down" /> Projects <FontAwesomeIcon icon="fa-solid fa-caret-down" /></h1>
