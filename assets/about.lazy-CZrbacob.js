@@ -1,0 +1,1 @@
+import{c as t,j as e}from"./index-BS6aGwBp.js";import{u as n}from"./useRouteContext-DybGpSap.js";const c=t("/about")({component:r});function r(){const o=n({from:"/about"});return console.log(o),e.jsx("div",{children:"Hello from About!"})}export{c as Route};
