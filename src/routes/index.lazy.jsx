@@ -4,6 +4,11 @@ import { createLazyFileRoute, useRouteContext } from "@tanstack/react-router";
 import ProjectSection from "../components/projectSection";
 import Footer from "../components/footer";
 
+import Aiden from "../../img/me.png"
+import NocaDashboard from "../../img/nocaDashboard.png"
+import NocaDashboard2 from "../../img/nocaDashboard2.png"
+import NocaLogo from "../../img/nocaLogo.png"
+
 import '@fortawesome/fontawesome-free/css/all.min.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { library } from '@fortawesome/fontawesome-svg-core'
@@ -34,7 +39,7 @@ function Index() {
             </div>
           </div>
           <div className="image-container">
-            <img src="./img/me.png" alt="Me" />
+            <img src={Aiden} alt="Me" />
           </div>
         </div>
         <h1 id="projects" style={{ textAlign: "center" }}><FontAwesomeIcon icon="fa-solid fa-caret-down" /> Projects <FontAwesomeIcon icon="fa-solid fa-caret-down" /></h1>
@@ -53,14 +58,14 @@ function Index() {
           content={
             <>
               <div>
-                 <img style={{ width: "100%" }} src="./img/nocaLogo.png" alt="" />
+                 <img style={{ width: "100%" }} src={NocaLogo} alt="" />
                 <p style={{ marginBottom: "1rem" }}>NOCA had future plans to upgrade their website and give their users more personalised user experience.</p>
                 <p style={{ marginBottom: "1rem" }}>They had a wish to give their users a dashboard style account panel, where they'd be able to see their events, webinars and relavant content.</p>
                 <p>This gave me a lot of experience in communication and teamwork, as well as a being able to design for an existing userbase.</p>
               </div>
               <div>
-                <img style={{ width: "100%", marginBottom: "1rem" }} src="./img/nocaDashboard.png" alt=""></img>
-                <img style={{ width: "100%" }} src="./img/nocaDashboard2.png" alt="" />
+                <img style={{ width: "100%", marginBottom: "1rem" }} src={NocaDashboard} alt=""></img>
+                <img style={{ width: "100%" }} src={NocaDashboard2} alt="" />
               </div>
             </>
           }

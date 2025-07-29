@@ -1,6 +1,8 @@
 import React from "react";
 import "../../src/style.css";
 
+import Aiden from "../../img/pfp.jpg"
+
 import '@fortawesome/fontawesome-free/css/all.min.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { library } from '@fortawesome/fontawesome-svg-core'
@@ -16,7 +18,7 @@ const ProfileCard = () => {
   return (
     <div style={styles.container}>
         <div style={styles.imageWrapper}>
-            <img style={styles.pfp} src="./img/pfp.jpg" alt="" />
+            <img style={styles.pfp} src={Aiden} alt="" />
         </div>
         <div style={styles.info}>
             <h2 style={styles.name}>Aiden Terp Schnegelsberg <span style={styles.pronoun}>They/Them</span></h2>
