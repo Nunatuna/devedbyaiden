@@ -47,7 +47,7 @@ function Index() {
           content={
             <>
               <p>This project demonstrates my skills in frontend development.This project demonstrates my skills in frontend development.This project demonstrates my skills in frontend development.</p>
-              <img style={{ width: "100%" }} src="public/img/nocaDashboard.png" alt=""></img>
+              <img style={{ width: "100%" }} src="./public/img/nocaDashboard.png" alt=""></img>
             </>
           }
         />
