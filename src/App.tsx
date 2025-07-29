@@ -8,13 +8,14 @@ import { RouterProvider, createRouter } from "@tanstack/react-router";
 import ScrollToHash from "./components/scrollToHash";
 // Generated Routetree
 import { routeTree } from "./routeTree.gen";
-import "./style.css";
+import "../src/style.css";
 
 export const router = createRouter({
   routeTree,
   context: {
     supabase: undefined!,
   },
+  basepath: "/devedbyaiden",   // ✅ Add this
 });
 
 declare module "@tanstack/react-router" {
