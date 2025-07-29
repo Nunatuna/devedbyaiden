@@ -16,17 +16,16 @@ const ProjectSection = ({ projectName, projectDescription, date, content, toolti
         <div style={styles.bodyContainer}>
             {/* Left Column - Title & Description */}
             <div style={styles.titleContainer}>
-                <h2 style={styles.title}>{projectName}</h2>
+                <div style={styles.titleWrapper}>
+                    <h2 style={styles.title}>{projectName}</h2>
+                </div>
                 <p style={styles.description}>{projectDescription}</p>
-                <p style={styles.date}>
-                    <FontAwesomeIcon icon="fa-solid fa-calendar-days" style={{ marginRight: "6px" }} />
-                    {date}
-                </p>
-            </div>
-
-            {/* Right Column - Content */}
-            <div style={styles.contentContainer}>
-                {/* Hoverable Icon with Tooltip */}
+                <div style={styles.dateInfoContainer}>
+                    <p style={styles.date}>
+                        <FontAwesomeIcon icon="fa-solid fa-calendar-days" style={{ marginRight: "6px" }} />
+                        {date}
+                    </p>
+                    {/* Hoverable Icon with Tooltip */}
                 <div
                     style={styles.iconWrapper}
                     onMouseEnter={() => setShowTooltip(true)}
@@ -39,6 +38,11 @@ const ProjectSection = ({ projectName, projectDescription, date, content, toolti
                         </div>
                     )}
                 </div>
+                </div>
+            </div>
+
+            {/* Right Column - Content */}
+            <div style={styles.contentContainer}>
 
                 {/* Dynamic Project Content */}
                 <div style={styles.projectContent}>{content}</div>
@@ -58,26 +62,35 @@ const styles = {
         flex: 1,
         flexDirection: "column",
         backgroundColor: "#0D1E26",
-        padding: "1rem",
         borderRadius: "0.8rem 0 0 0.8rem",
         borderRight: "4px dotted var(--bg)",
+        paddingBottom: "1rem",
     },
     title: {
         color: "var(--heading)",
         fontSize: "1.5rem",
         fontWeight: "700",
+    },
+    titleWrapper: {
+        display: "flex",
+        backgroundColor: "#1B2A33",
+        padding: "1rem",
         marginBottom: "1rem",
+        borderRadius: "0.8rem 0 0 0",
     },
     description: {
         color: "var(--text)",
         fontSize: "1rem",
         marginBottom: "1rem",
+        marginLeft: "1rem",
+        marginRight: "1rem",
     },
     date: {
         fontFamily: "Doto",
         color: "var(--accent-text)",
         fontSize: "1rem",
         marginTop: "auto",
+        marginLeft: "1rem",
     },
     contentContainer: {
         position: "relative",
@@ -88,9 +101,8 @@ const styles = {
         borderRadius: "0 0.8rem 0.8rem 0",
     },
     iconWrapper: {
-        position: "absolute",
-        top: "1rem",
-        right: "1rem",
+        position: "relative", 
+        marginLeft: "auto",
     },
     extraInfo: {
         color: "var(--accent-text)",
@@ -114,10 +126,14 @@ const styles = {
         display: "grid",
         gridTemplateColumns: "40% 60%",
         gap: "1rem",
-        padding: "2.5rem 1rem 0rem 0rem",
+        paddingRight: "1rem",
         color: "var(--text)",
         fontSize: "1rem",
-    }
+    },
+    dateInfoContainer: {
+        display: "flex",
+        marginRight: "1rem",
+    },
 };
 
 export default ProjectSection;

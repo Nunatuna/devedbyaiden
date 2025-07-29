@@ -12,7 +12,7 @@ const Navbar = () => {
         {/* ✅ Works with TanStack Router, scrolls to #projects */}
         <Link to="/" hash="projects">PROJECTS</Link>
         <Link to="/about">ABOUT</Link>
-        <Link to="/contact" className="contact-link">CONTACT</Link>
+        <a className="contact-link" href="https://www.linkedin.com/in/aidenschnegelsberg/" target="_blank">CONTACT</a>
       </div>
     </div>
   );

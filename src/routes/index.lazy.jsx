@@ -40,34 +40,44 @@ function Index() {
         <h1 id="projects" style={{ textAlign: "center" }}><FontAwesomeIcon icon="fa-solid fa-caret-down" /> Projects <FontAwesomeIcon icon="fa-solid fa-caret-down" /></h1>
         
         <ProjectSection
-          projectName="Portfolio Website"
-          projectDescription="My Internship as a UX-designer at NOCA. I was there for 3 months and helped with the desgin of the new user dashboard for their users."
-          date="26.07.2025"
+          projectName="NOCA"
+          projectDescription={
+            <>
+              <p style={{ marginBottom: "1rem" }}>My internship exam project that I worked on as a student at Cphbusiness Lyngby</p>
+              <p style={{ marginBottom: "1rem" }}>NOCA is a HR orginazation that shares research, gives webinars and sets up events for it's members</p>
+              <a style={{ color: "var(--accent-text)" , textDecoration: "none"}} href="https://nunatuna.github.io/praktikrapport/" target="_blank"><FontAwesomeIcon icon="fa-solid fa-arrow-up-right-from-square" /> Visit full report (Danish)</a>
+            </>
+          }
+          date="28.03.2025"
           tooltipText="Designed in Figma"
           content={
             <>
-              <p>This project demonstrates my skills in frontend development.This project demonstrates my skills in frontend development.This project demonstrates my skills in frontend development.</p>
-              <img style={{ width: "100%" }} src="./public/img/nocaDashboard.png" alt=""></img>
+              <div>
+                 <img style={{ width: "100%" }} src="./img/nocaLogo.png" alt="" />
+                <p style={{ marginBottom: "1rem" }}>NOCA had future plans to upgrade their website and give their users more personalised user experience.</p>
+                <p style={{ marginBottom: "1rem" }}>They had a wish to give their users a dashboard style account panel, where they'd be able to see their events, webinars and relavant content.</p>
+                <p>This gave me a lot of experience in communication and teamwork, as well as a being able to design for an existing userbase.</p>
+              </div>
+              <div>
+                <img style={{ width: "100%", marginBottom: "1rem" }} src="./img/nocaDashboard.png" alt=""></img>
+                <img style={{ width: "100%" }} src="./img/nocaDashboard2.png" alt="" />
+              </div>
             </>
           }
         />
         <ProjectSection
-          projectName="Portfolio Website"
-          projectDescription="A React-based personal portfolio showcasing my work."
-          date="26.07.2025"
-          tooltipText="Built with React"
-          content={
-            <p>This project demonstrates my skills in frontend development.</p>
-          }
-        />
-        <ProjectSection
-          projectName="Portfolio Website"
-          projectDescription="A React-based personal portfolio showcasing my work."
-          date="26.07.2025"
-          tooltipText="Built with React"
-          content={
-            <p>This project demonstrates my skills in frontend development.</p>
-          }
+            projectName="Hilfe - App"
+            projectDescription={
+              <>
+                <p style={{ marginBottom: "1rem" }}>A exam project turned future company aspirations.</p>
+                <p>Together with two of my good friends we set out to develop an app to help people navigate home safely from their night out.</p>
+              </>
+            }
+            date="03.05.2025"
+            tooltipText="Built with React Native"
+            content={
+              <p>This project demonstrates my skills in frontend development.</p>
+            }
         />
 
       </div>

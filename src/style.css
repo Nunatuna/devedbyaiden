@@ -77,6 +77,13 @@ p{
     color: var(--text);
 }
 
+li{
+    font-family: "IBM Plex Sans", sans-serif;
+    font-weight: 300;
+    font-size: 1rem;
+    color: var(--text);
+}
+
 /*NAVBAR*/
 .navbar-container{
     position: sticky;
@@ -134,20 +141,20 @@ p{
 }
 
 .contact-link:hover{
-    background-color: var(--card-bg);
+    background-color: var(--heading);
 }
 
 /*HOME PAGE*/
 
 .body-container{
-    padding: 2% 9%;
+    padding: 2% 9% 0% 9%;
 }
 
 .home-container{
     display: flex;
     flex-direction: row;
     align-items: center;
-    height: 80vh;
+    height: 70vh;
     margin-bottom: 10vh;
 }
 
@@ -186,11 +193,30 @@ p{
 }
 
 .pronunciation::before {
-  content: "[";
-  color: var(--accent-text);
+    content: "[";
+    color: var(--accent-text);
 }
 
 .pronunciation::after {
-  content: "]";
-  color: var(--accent-text);
+    content: "]";
+    color: var(--accent-text);
+}
+
+/*About Page*/
+.contact {
+    flex: 1;
+    background-color: var(--accent);
+    color: var(--heading);
+    font-weight: 700;
+    padding: 1rem 2rem;
+    text-align: center;
+    border-radius: 0.4rem;
+    text-decoration: none;
+    font-family: "Doto";
+    transition: 0.3s;
+}
+
+.contact:hover{
+    background-color: var(--heading);
+    color: var(--card-bg);
 }
