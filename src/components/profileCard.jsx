@@ -1,7 +1,7 @@
 import React from "react";
 import "../../src/style.css";
 
-import Aiden from "../../img/pfp.jpg"
+import Aiden from "../img/pfp.jpg"
 
 import '@fortawesome/fontawesome-free/css/all.min.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
