@@ -4,10 +4,10 @@ import { createLazyFileRoute, useRouteContext } from "@tanstack/react-router";
 import ProjectSection from "../components/projectSection";
 import Footer from "../components/footer";
 
-import Aiden from "../../img/me.png"
-import NocaDashboard from "../../img/nocaDashboard.png"
-import NocaDashboard2 from "../../img/nocaDashboard2.png"
-import NocaLogo from "../../img/nocaLogo.png"
+import Aiden from "../img/me.png"
+import NocaDashboard from "../img/nocaDashboard.png"
+import NocaDashboard2 from "../img/nocaDashboard2.png"
+import NocaLogo from "../img/nocaLogo.png"
 
 import '@fortawesome/fontawesome-free/css/all.min.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
