@@ -542,6 +542,10 @@ ul {
     grid-template-columns: 1fr;
   }
 
+  .project-body img {
+    margin-bottom: 1rem;
+  }
+
   .project-title-container {
     border-right: none;
     border-bottom: 4px dotted var(--bg);
