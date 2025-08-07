@@ -42,7 +42,7 @@ function Index() {
             <img src={Aiden} alt="Me" />
           </div>
         </div>
-        <h1 id="projects" style={{ textAlign: "center" }}><FontAwesomeIcon icon="fa-solid fa-caret-down" /> Projects <FontAwesomeIcon icon="fa-solid fa-caret-down" /></h1>
+        <h1 id="projects" style={{ textAlign: "center" }} className="projects-header"><FontAwesomeIcon icon="fa-solid fa-caret-down" /> Projects <FontAwesomeIcon icon="fa-solid fa-caret-down" /></h1>
         
         <ProjectSection
           projectName="NOCA"

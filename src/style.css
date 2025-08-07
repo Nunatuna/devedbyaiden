@@ -148,6 +148,10 @@ li{
     display: none;
 }
 
+.contact-icon{
+    display: none;
+}
+
 /* --- Mobile responsive --- */
 @media (max-width: 875px) {
   .navbar-container{
@@ -155,7 +159,7 @@ li{
     top: 0;
     left: 50%;
     background-color: var(--card-bg);
-    padding: 1.5rem 1.5rem;
+    padding: 1rem 1.5rem;
     border-radius: 0 0 0.8rem 0.8rem;
     margin: 0 1rem;
     display: flex;
@@ -166,12 +170,36 @@ li{
     z-index: 10;
     box-shadow: 0 8px 10px -6px rgba(0, 0, 0, 0.3);
     }
+    .navbar-logo {
+        display: none;
+    }
     .logo-name{
         display: none;
     }
     .logo-icon{
         display: block;
     }
+    .contact-link{
+        background-color: var(--accent);
+        padding: 0.5rem 0.5rem;
+        border-radius: 0.4rem;
+        color: var(--bg);
+        transition: 0.3s;
+    }
+    .contact-icon{
+        display: block;
+    }
+    .contact-text{
+        display: none;
+    }
+    .navbar-links{
+        display: flex;
+        align-items: center;
+        gap: 0rem;
+        justify-content: space-between;
+        width: 100%;
+    }
+    
 }
 
 /*HOME PAGE*/
@@ -250,6 +278,10 @@ li{
 
     .image-container img{
         max-width: 400px;
+    }
+
+    .projects-header{
+        font-size: 2rem;
     }
 }
 
