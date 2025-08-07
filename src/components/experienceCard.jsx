@@ -15,9 +15,9 @@ library.add(fas, far, fab)
 
 const ExperienceCard = () => {
   return (
-    <div style={styles.container}>
+    <div className="experience-education-container">
 
-        <div style={styles.experienceWrapper}>
+        <div className="experience-wrapper">
             <h2 style={{marginBottom: "1rem", marginTop: "1rem", textAlign: "center"}}><FontAwesomeIcon style={{color: "var(--accent-text)"}} icon="fa-solid fa-briefcase" /> Experience</h2>
             <div style={styles.divider}></div>
             <div>
@@ -38,7 +38,7 @@ const ExperienceCard = () => {
             </div>
         </div>
 
-        <div style={styles.educationWrapper}>
+        <div className="education-wrapper">
             <h2 style={{marginBottom: "1rem", marginTop: "1rem", textAlign: "center"}}><FontAwesomeIcon style={{color: "var(--accent-text)"}} icon="fa-solid fa-graduation-cap" /> Education</h2>
             <div style={styles.divider}></div>
             <div>

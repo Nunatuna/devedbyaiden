@@ -13,39 +13,36 @@ const ProjectSection = ({ projectName, projectDescription, date, content, toolti
     const [showTooltip, setShowTooltip] = useState(false);
 
     return (
-        <div style={styles.bodyContainer}>
-            {/* Left Column - Title & Description */}
-            <div style={styles.titleContainer}>
-                <div style={styles.titleWrapper}>
-                    <h2 style={styles.title}>{projectName}</h2>
+        <div className="project-body">
+            <div className="project-title-container">
+                <div className="project-title-wrapper">
+                <h2 style={styles.title}>{projectName}</h2>
                 </div>
-                <p style={styles.description}>{projectDescription}</p>
-                <div style={styles.dateInfoContainer}>
-                    <p style={styles.date}>
-                        <FontAwesomeIcon icon="fa-solid fa-calendar-days" style={{ marginRight: "6px" }} />
-                        {date}
-                    </p>
-                    {/* Hoverable Icon with Tooltip */}
+                <p className="project-description">{projectDescription}</p>
+
+                <div className="project-date-info">
+                <p className="project-date">
+                    <FontAwesomeIcon icon="fa-solid fa-calendar-days" style={{ marginRight: "6px" }} />
+                    {date}
+                </p>
+
                 <div
-                    style={styles.iconWrapper}
+                    className="project-icon"
                     onMouseEnter={() => setShowTooltip(true)}
                     onMouseLeave={() => setShowTooltip(false)}
                 >
-                    <FontAwesomeIcon style={styles.extraInfo} icon="fa-solid fa-circle-nodes" />
+                    <FontAwesomeIcon icon="fa-solid fa-circle-nodes" />
                     {showTooltip && (
-                        <div style={styles.tooltip}>
-                            <p>{tooltipText}</p>
-                        </div>
+                    <div className="project-tooltip">
+                        <p>{tooltipText}</p>
+                    </div>
                     )}
                 </div>
                 </div>
             </div>
 
-            {/* Right Column - Content */}
-            <div style={styles.contentContainer}>
-
-                {/* Dynamic Project Content */}
-                <div style={styles.projectContent}>{content}</div>
+            <div className="project-content-container">
+                <div className="project-content">{content}</div>
             </div>
         </div>
     );

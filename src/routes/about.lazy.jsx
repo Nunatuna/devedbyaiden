@@ -26,10 +26,10 @@ function About() {
 
  return (
     <>
-      <div style={styles.container}>
-        <ProfileCard />
-        <ExperienceCard />
-      </div>
+    <div className="about-container">
+      <ProfileCard />
+      <ExperienceCard />
+    </div>
 
       <Footer />
     </>
